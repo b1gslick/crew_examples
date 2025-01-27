@@ -20,3 +20,9 @@ k6 run browser_example.js
 ```bash
 yarn reassure
 ```
+
+## run accessibility tests
+
+```bash
+npm test
+```
