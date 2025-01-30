@@ -5,6 +5,7 @@ use std::{
 
 fn main() {
     let listener = TcpListener::bind("0.0.0.0:7878").unwrap();
+    println!("Server startet on 0.0.0.0:7878");
 
     for stream in listener.incoming() {
         let stream = stream.unwrap();

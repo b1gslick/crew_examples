@@ -18,3 +18,14 @@ with k6 tools
 ```bash
 - k6 run performance_test/tcp_tests.js
 ```
+
+## For clean tcp
+
+- install xk6
+
+```bash
+go install go.k6.io/xk6/cmd/xk6@latest
+
+xk6 build master \
+  --with github.com/NAlexandrov/xk6-tcp
+```
